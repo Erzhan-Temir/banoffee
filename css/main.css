@@ -1124,6 +1124,12 @@ blockquote {
   margin-top: 15px;
   background-color: #FFECD2;
 }
+.feedback__author:hover {
+  opacity: 0.7;
+}
+.feedback__author:active {
+  opacity: 0.5;
+}
 .feedback__review-image {
   padding: 15px;
   margin-top: 15px;
@@ -1175,6 +1181,105 @@ blockquote {
   .feedback__text {
     font-size: 22px;
     line-height: 28px;
+  }
+}
+.contacts {
+  margin-top: 40px;
+}
+.contacts__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.contacts__heading {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 20px;
+  line-height: 24px;
+}
+.contacts__description {
+  text-align: center;
+}
+.contacts__link {
+  display: block;
+  margin-left: 110px;
+  color: #000000;
+}
+.contacts__link:hover {
+  opacity: 0.7;
+}
+.contacts__link:active {
+  opacity: 0.5;
+}
+.contacts__tel {
+  position: relative;
+}
+.contacts__tel::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/contacts-phone.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.contacts__wa {
+  position: relative;
+  margin-top: 10px;
+}
+.contacts__wa::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/contacts-wa.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.btn--applctn {
+  margin-left: 60px;
+  padding-left: 26px;
+}
+@media (min-width: 678px) {
+  .contacts__wrapper {
+    width: 678px;
+  }
+  .contacts__heading {
+    font-size: 22px;
+    line-height: 27px;
+  }
+  .contacts__description {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .contacts__link {
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 275px;
+  }
+  .btn--applctn {
+    margin-top: 0;
+    margin-left: 240px;
+  }
+}
+@media (min-width: 1110px) {
+  .contacts__wrapper {
+    width: 1110px;
+  }
+  .contacts__heading {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .contacts__link {
+    margin-left: 495px;
+  }
+  .btn--applctn {
+    width: 255px;
+    margin-left: 430px;
   }
 }
 body {
