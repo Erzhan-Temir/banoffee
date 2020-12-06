@@ -600,6 +600,24 @@ th {
   line-height: 24px;
   font-weight: bold;
 }
+.products--exclsv:after,
+.products--newy:after {
+  content: "ХИТ!";
+  position: absolute;
+  top: 40px;
+  right: -40px;
+  box-sizing: border-box;
+  width: 50px;
+  height: 24px;
+  padding-top: 1px;
+  padding-left: 11px;
+  background: linear-gradient(270deg, #F9888C 0%, #FF0844 100%);
+  border-radius: 10px 0;
+  color: #000;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+}
 .products__bg {
   position: absolute;
   top: 0;
@@ -667,6 +685,11 @@ th {
     top: 40px;
     right: 155px;
   }
+  .products--exclsv:after,
+  .products--newy:after {
+    top: 40px;
+    right: 187px;
+  }
   .products__wrapper {
     min-height: 478px;
     box-sizing: border-box;
@@ -715,6 +738,11 @@ th {
   .products--pp:after {
     top: 80px;
     right: 360px;
+  }
+  .products--exclsv:after,
+  .products--newy:after {
+    top: 80px;
+    right: 393px;
   }
   .products {
     padding-top: 0;
