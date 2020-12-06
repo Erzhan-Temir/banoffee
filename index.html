@@ -10,6 +10,7 @@
   <![endif]-->
   <link rel="preload" href="fonts/Gilroylight.woff2" as="font">
   <link rel="preload" href="fonts/Gilroyextrabold.woff2" as="font">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -205,12 +206,22 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide price-list__item price-list__item--pp">
+          <div class="swiper-slide slide slide--pp">
+            <div class="slide__bg"></div>
             <picture>
-              <img src="#" alt="Десерты для правильного питания на заказ в Бишкеке">
+              <source media="(min-width: 1110px)" type="image/webp"
+                      srcset="img/main-category/card-pp-desktop.webp 1x, img/main-category/card-pp-desktop@2x.webp 2x, img/main-category/card-pp-desktop@3x.webp 3x">
+              <source media="(min-width: 678px)" type="image/webp"
+                      srcset="img/main-category/card-pp-tablet.webp 1x, img/main-category/card-pp-tablet@2x.webp 2x, img/main-category/card-pp-tablet@3x.webp 3x">
+
+              <source type="image/webp"
+                      srcset="img/main-category/card-pp-mobile.webp 1x, img/main-category/card-pp-mobile@2x.webp 2x, img/main-category/card-pp-mobile@3x.webp 3x">
+              <img src="img/main-category/card-pp-mobile.jpg"
+                   srcset="img/main-category/card-pp-mobile@2x.jpg 2x, img/main-category/card-pp-mobile@3x.jpg 3x"
+                   alt="Десерты для правильного питания на заказ в Бишкеке" class="slide__img">
             </picture>
-            <h3 class="price-list__item__heading">Десерты для правильного питания</h3>
-            <table class="price-list__item__table">
+            <h3 class="slide__heading">Десерты для правильного питания</h3>
+            <table class="slide__table">
               <thead>
               <tr>
                 <th>до 6 шт</th>
@@ -224,17 +235,59 @@
               </tr>
               </tbody>
             </table>
-            <span class="price-list__item__description">цена указана за 1 шт (150 гр)</span>
-            <a href="#" class="btn btn--price-list">Каталог</a>
+            <span class="slide__description">цена указана за 1 шт (150 гр)</span>
+            <a href="#" class="btn btn--slide hvr-fade">Каталог</a>
           </div>
 
-
-          <div class="swiper-slide price-list__item">
+          <div class="swiper-slide slide slide--exclsv">
+            <div class="slide__bg"></div>
             <picture>
-              <img src="#" alt="Чизкейки на заказ в Бишкеке">
+              <source media="(min-width: 1110px)" type="image/webp"
+                      srcset="img/price-list/pl-order-desktop.webp 1x, img/price-list/pl-order-desktop@2x.webp">
+              <source media="(min-width: 678px)" type="image/webp"
+                      srcset="img/price-list/pl-order-tablet.webp 1x, img/price-list/pl-order-tablet@2x.webp">
+
+              <source type="image/webp"
+                      srcset="img/price-list/pl-order-mobile.webp 1x, img/price-list/pl-order-mobile@2x.webp 2x">
+              <img src="img/price-list/pl-order-mobile.jpg"
+                   srcset="img/price-list/pl-order-mobile@2x.jpg 2x"
+                   alt="Десерты для правильного питания на заказ в Бишкеке" class="slide__img">
             </picture>
-            <h3 class="price-list__item__heading">Чизкейки</h3>
-            <table class="price-list__item__table">
+            <h3 class="slide__heading">Торты на заказ</h3>
+            <table class="slide__table">
+              <thead>
+              <tr>
+                <th>до 2 кг</th>
+                <th>от 2 кг</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>1100 сом</td>
+                <td>999 сом</td>
+              </tr>
+              </tbody>
+            </table>
+            <span class="slide__description">цена указана за 1 кг</span>
+            <a href="#" class="btn btn--slide hvr-fade">Каталог</a>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="slide__bg"></div>
+            <picture>
+              <source media="(min-width: 1110px)" type="image/webp"
+                      srcset="img/price-list/pl-chcake-desktop.webp 1x, img/price-list/pl-chcake-desktop@2x.webp">
+              <source media="(min-width: 678px)" type="image/webp"
+                      srcset="img/price-list/pl-chcake-tablet.webp 1x, img/price-list/pl-chcake-tablet@2x.webp">
+
+              <source type="image/webp"
+                      srcset="img/price-list/pl-chcake-mobile.webp 1x, img/price-list/pl-chcake-mobile@2x.webp 2x">
+              <img src="img/price-list/pl-chcake-mobile.jpg"
+                   srcset="img/price-list/pl-chcake-mobile@2x.jpg 2x"
+                   alt="Десерты для правильного питания на заказ в Бишкеке" class="slide__img">
+            </picture>
+            <h3 class="slide__heading">Чизкейки</h3>
+            <table class="slide__table">
               <thead>
               <tr>
                 <th>до 1 кг</th>
@@ -248,18 +301,84 @@
               </tr>
               </tbody>
             </table>
-            <span class="price-list__item__description">цена указана за 1 кг</span>
-            <a href="#" class="btn btn--price-list">Каталог</a>
+            <span class="slide__description">цена указана за 1 кг</span>
+            <a href="#" class="btn btn--slide hvr-fade">Каталог</a>
           </div>
 
-          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide slide">
+            <div class="slide__bg"></div>
+            <picture>
+              <source media="(min-width: 1110px)" type="image/webp"
+                      srcset="img/price-list/pl-muss-desktop.webp 1x, img/price-list/pl-muss-desktop@2x.webp">
+              <source media="(min-width: 678px)" type="image/webp"
+                      srcset="img/price-list/pl-muss-tablet.webp 1x, img/price-list/pl-muss-tablet@2x.webp">
+
+              <source type="image/webp"
+                      srcset="img/price-list/pl-muss-mobile.webp 1x, img/price-list/pl-muss-mobile@2x.webp 2x">
+              <img src="img/price-list/pl-muss-mobile.jpg"
+                   srcset="img/price-list/pl-muss-mobile@2x.jpg 2x"
+                   alt="Десерты для правильного питания на заказ в Бишкеке" class="slide__img">
+            </picture>
+            <h3 class="slide__heading">Муссовые торты</h3>
+            <table class="slide__table">
+              <thead>
+              <tr>
+                <th>до 2 кг</th>
+                <th>от 2 кг</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>1000 сом</td>
+                <td>899 сом</td>
+              </tr>
+              </tbody>
+            </table>
+            <span class="slide__description">цена указана за 1 кг</span>
+            <a href="#" class="btn btn--slide hvr-fade">Каталог</a>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="slide__bg"></div>
+            <picture>
+              <source media="(min-width: 1110px)" type="image/webp"
+                      srcset="img/price-list/pl-classic-desktop.webp 1x, img/price-list/pl-classic-desktop@2x.webp">
+              <source media="(min-width: 678px)" type="image/webp"
+                      srcset="img/price-list/pl-classic-tablet.webp 1x, img/price-list/pl-classic-tablet@2x.webp">
+
+              <source type="image/webp"
+                      srcset="img/price-list/pl-classic-mobile.webp 1x, img/price-list/pl-classic-mobile@2x.webp 2x">
+              <img src="img/price-list/pl-classic-mobile.jpg"
+                   srcset="img/price-list/pl-classic-mobile@2x.jpg 2x"
+                   alt="Десерты для правильного питания на заказ в Бишкеке" class="slide__img">
+            </picture>
+            <h3 class="slide__heading">Классические торты</h3>
+            <table class="slide__table">
+              <thead>
+              <tr>
+                <th>до 1 кг</th>
+                <th>от 1 кг</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>800 сом</td>
+                <td>699 сом</td>
+              </tr>
+              </tbody>
+            </table>
+            <span class="slide__description">цена указана за 1 кг</span>
+            <a href="#" class="btn btn--slide hvr-fade">Каталог</a>
+          </div>
+
+
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
 
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev" style="left: 5px;"></div>
+        <div class="swiper-button-next" style="right: 20px;"></div>
       </div>
 
     </div>
@@ -354,6 +473,7 @@
   </div>
 </footer>
 
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
   var navMain = document.querySelector('.main-nav');
   var navToggle = document.querySelector('.main-nav__toggle');
@@ -370,6 +490,50 @@
     }
   });
 </script>
+<script>
+  var mySwiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    speed: 700,
+    loop: true,
+
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 0
+      },
+      // when window width is >= 480px
+      678: {
+        slidesPerView: 2,
+        spaceBetween: 34
+      },
+      // when window width is >= 640px
+      1110: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      }
+    },
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  })
+</script>
+
+
 
 </body>
 </html>
