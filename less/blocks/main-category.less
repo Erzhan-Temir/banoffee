@@ -1,0 +1,251 @@
+@import url(../abstract/variables.less);
+
+.category__wrapper {
+  width: @mobile-width;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.category__description {
+  margin: 0;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.products {
+  position: relative;
+
+  margin-top: 20px;
+  padding-top: 55px;
+
+  &:hover .products__bg {
+    border-right: 1px solid @corporate-red;
+  }
+}
+
+.products--pp {
+  &:after {
+    content: "Gluten free";
+
+    position: absolute;
+    top: 40px;
+    right: -40px;
+
+    box-sizing: border-box;
+
+    width: 85px;
+    height: 30px;
+
+    padding-top: 3px;
+    padding-left: 6px;
+
+    background: linear-gradient(270deg, #38F9D7 0%, #43E97B 88.04%);
+    border-radius: 10px 0;
+
+    color: #000;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+  }
+}
+
+.products__bg {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  z-index: -1;
+
+  width: 360px;
+  height: 657px;
+
+  background: linear-gradient(180deg, #FFECD2 0%, rgba(255, 236, 210, 0) 100%);
+  transform: rotate(180deg);
+}
+
+.products__wrapper {
+  padding-left: 26px;
+  padding-right: 26px;
+}
+
+.products__description {
+  color: @corporate-red;
+
+  margin: 0;
+  padding: 0;
+
+  i {
+    font-style: normal;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+}
+
+.btn--products {
+  margin-top: 20px;
+  margin-left: 41px;
+}
+
+// Special styles for exclusive cakes
+.products--exclsv .btn--products {
+  margin-top: 10px;
+}
+
+.btn--contacts {
+  padding-left: 32px;
+}
+
+@media (min-width: @tablet-width) {
+  .category__wrapper {
+    width: @tablet-width;
+  }
+
+  .category__description {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .products {
+    padding-top: 71px;
+  }
+
+  .products__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    width: 723px;
+    height: 478px;
+
+    background: linear-gradient(270deg, #FFECD2 0%, rgba(218, 238, 242, 0) 100%);
+    transform: none;
+  }
+
+  .products__image {
+    position: absolute;
+    top: 32px;
+    left: 0;
+  }
+
+  .products--pp {
+    padding-top: 91px;
+  }
+
+  .products--pp {
+    &:after {
+      top: 40px;
+      right: 155px;
+    }
+  }
+
+  .products__wrapper {
+    min-height: 478px;
+
+    box-sizing: border-box;
+
+    padding-left: 438px;
+  }
+
+  .products__heading {
+    width: 240px;
+
+    margin-top: 0;
+
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .products__description {
+    width: 270px;
+
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .btn--products {
+    width: 240px;
+    padding-left: 86px;
+
+    margin-left: 0;
+  }
+
+  .btn--contacts {
+    padding-left: 53px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .category__wrapper {
+    width: @desktop-width;
+  }
+
+  .category__description {
+    width: 825px;
+
+    box-sizing: border-box;
+
+    padding-left: 95px;
+
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .products__bg {
+    width: 1110px;
+    height: 630px;
+  }
+
+  .products__image {
+    top: 49px;
+    left: 95px;
+  }
+
+  .products--pp {
+    &:after {
+      top: 80px;
+      right: 360px;
+    }
+  }
+
+  .products  {
+    padding-top: 0;
+  }
+
+  // Переопределение стиля для ПП, приоритетность
+  .products--pp .products__wrapper {
+    padding-top: 125px;
+  }
+
+  .products__wrapper {
+    min-height: 630px;
+
+    padding-top: 125px;
+    padding-left: 665px;
+  }
+
+  .products__heading {
+    width: 320px;
+  }
+
+  .products__description {
+    width: 320px;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .btn--products {
+    margin-top: 40px;
+
+    width: 255px;
+    padding-left: 82px;
+  }
+
+  .btn--contacts {
+    padding-left: 39px;
+  }
+}
