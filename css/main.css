@@ -587,7 +587,7 @@ th {
   content: "Gluten free";
   position: absolute;
   top: 40px;
-  right: -40px;
+  right: 0;
   box-sizing: border-box;
   width: 85px;
   height: 30px;
@@ -605,7 +605,7 @@ th {
   content: "ХИТ!";
   position: absolute;
   top: 40px;
-  right: -40px;
+  right: 0;
   box-sizing: border-box;
   width: 50px;
   height: 24px;
