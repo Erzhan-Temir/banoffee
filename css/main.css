@@ -963,6 +963,9 @@ th {
   .btn--slide {
     padding-left: 55px;
   }
+  .slide--exclsv .btn--slide {
+    padding-left: 50px;
+  }
 }
 .about__wrapper {
   width: 320px;
