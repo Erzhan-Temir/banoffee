@@ -518,6 +518,12 @@ th {
   margin: 0 auto;
   margin-top: 20px;
 }
+.catalog-block__heading {
+  margin-top: 50px;
+  margin-bottom: -30px;
+  font-size: 24px;
+  line-height: 24px;
+}
 .catalog-item {
   position: relative;
   min-height: 636px;
@@ -541,6 +547,7 @@ th {
   position: absolute;
   top: 40px;
   right: 0;
+  z-index: 100;
   box-sizing: border-box;
   width: 85px;
   height: 30px;
@@ -616,8 +623,14 @@ th {
   .catalog-list__wrapper {
     width: 678px;
     margin: 0 auto;
+  }
+  .catalog-block__wrapper {
     display: flex;
     flex-wrap: wrap;
+  }
+  .catalog-block__heading {
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
   .catalog-item {
     width: 320px;
